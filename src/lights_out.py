@@ -26,11 +26,11 @@ def randomize_board(board: list[int], moves: int) -> None:
   # Your code here!
   
 
-def show_board(board: list[int], strip: NeoPixel) -> None: 
+def is_solved(board: list[int]) -> bool: 
   # Your code here!
 
 
-def is_solved(board: list[int]) -> bool: 
+def show_board(board: list[int], strip: NeoPixel) -> None: 
   # Your code here!
 
 
