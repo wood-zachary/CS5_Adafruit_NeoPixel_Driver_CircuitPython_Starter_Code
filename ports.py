@@ -22,7 +22,7 @@ def get_trinkey_port():
     ports = serial.tools.list_ports.comports()
     for port, desc, hwid in sorted(ports):
         if 'Trinkey' in desc or '239A' in desc.upper() or '239A' in hwid.upper():
-            s = serial.Serial(port, baudrate=115200, dsrdtr=False, rtscts=False, xonxoff=False )
+            s = serial.Serial(port, baudrate=115200)
             return s
     return None
 
